@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    display: inline-block;
+}
+
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
