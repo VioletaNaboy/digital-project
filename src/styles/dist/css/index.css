@@ -39,8 +39,8 @@ a, button {
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("/src/fonts/SF-Pro-Display/SF-Pro-Display-Thin.otf") format("opentype");
-  font-weight: 200;
+  src: url("/src/fonts/SF-Pro-Display/SF-Pro-Display-Bold.otf") format("opentype");
+  font-weight: 900;
   font-style: normal;
 }
 body {
@@ -67,6 +67,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 135px;
+  background-color: #fff;
 }
 .header .logo {
   width: 69px;
@@ -93,6 +94,7 @@ body {
 .hero .hero-wrapper {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
   gap: 122px;
 }
 .hero .hero-title {
@@ -152,13 +154,16 @@ body {
 
 .about .about-wrapper {
   background-color: #fbfbfb;
+  min-width: 400px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 30px 70px;
   gap: 30px;
 }
 .about .about-wrapper .img-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
 }
@@ -183,4 +188,68 @@ body {
   font-size: 64px;
   font-weight: 300;
   color: #bdbdbd;
+}
+
+.tasks .wrapper {
+  display: flex;
+  gap: 187px;
+  margin-top: 60px;
+}
+.tasks .task {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 144px;
+}
+.tasks .task span {
+  color: #f2f2f2;
+  font-family: "SF Pro Display";
+  font-size: 200px;
+  font-weight: 900;
+}
+.tasks .task p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.64;
+}
+
+.projects .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 60px auto 30px;
+}
+.projects .see-more-btn {
+  background-color: #333;
+  color: #fff;
+  fill: #fff;
+  border: none;
+  position: relative;
+}
+.projects .image-container {
+  position: relative;
+  width: 503px;
+  height: 225px;
+  opacity: 0.8;
+  background-color: #333;
+}
+.projects .overlay {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0 58px;
+}
+.projects .overlay h2 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+}
+.projects .overlay .see-more-btn {
+  background-color: transparent;
+  color: #fff;
+  fill: #fff;
 }
