@@ -158,10 +158,167 @@
         </div>
       </section>
       <section class="contacts" id="contacts">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="subtitle">Зв'язатися з нами</h2>
+          <div class="contacts-wrapper">
+            <form action="submit" class="contacts-form">
+              <input type="text" class="input" placeholder="Ім'я" />
+              <input
+                type="tel"
+                required
+                class="input"
+                placeholder="Номер телефону*"
+              />
+              <input
+                type="email"
+                required
+                class="input"
+                placeholder="E-mail*"
+              />
+              <input
+                type="text"
+                class="input"
+                placeholder="Товар/послуга, що цікавить"
+              />
+              <textarea
+                name="desc"
+                id="desc"
+                cols="30"
+                rows="10"
+                required
+                class="desc"
+                placeholder="Повідомлення*"
+              ></textarea>
+              <label for="Policy" class="checkbox"
+                ><input
+                  type="checkbox"
+                  name="Policy"
+                  id="Policy"
+                  required
+                />Надсилаючи заявку Ви погоджуєтесь з політикою
+                конфіденційності</label
+              >
+              <button type="submit" class="see-more-btn">
+                Відправити
+                <svg width="32" height="15">
+                  <use href="./src/img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </form>
+            <img
+              src="./src/img/contacts/photo.jpg"
+              srcset="
+                ./src/img/contacts/photo.jpg    1x,
+                ./src/img/contacts/photo@2x.jpg 2x
+              "
+              alt="Man with phone"
+              width="749"
+              height="369"
+            />
+          </div>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container footer-wrapper">
+        <div>
+          <img src="./src/img/logo-white.svg" alt="Logo" class="logo" />
+        </div>
+        <div class="footer-menu">
+          <h4>Інформація</h4>
+          <ul>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Головна</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Галерея</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Проєкти</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Сертифікати</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h4>Контакти</h4>
+          <ul>
+            <li>
+              <svg width="16" height="16">
+                <use href="./src/img/sprite.svg#icon-map"></use>
+              </svg>
+              100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10
+            </li>
+            <li>
+              <a href="tel:+38000000000">
+                <svg width="16" height="16">
+                  <use href="./src/img/sprite.svg#icon-tel"></use>
+                </svg>
+                +38 (000) 000 00 00</a
+              >
+            </li>
+            <li>
+              <a href="mailto:mail@gmail.com">
+                <svg width="16" height="16">
+                  <use href="./src/img/sprite.svg#icon-mail"></use>
+                </svg>
+                mailto:mail@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Соціальні мережі</h4>
+          <ul>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                ><svg width="20" height="20">
+                  <use href="./src/img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20">
+                  <use href="./src/img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20">
+                  <use href="./src/img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20">
+                  <use href="./src/img/sprite.svg#icon-pinterest"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="footer-policy">© 2019 Digital Project. Всі права захищені.</div>
+      </div>
+    </footer>
     <script src="script.js" defer></script>
   </body>
 </html>

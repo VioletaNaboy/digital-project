@@ -16,11 +16,14 @@ button {
   display: inline-block;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
-a, button {
+a,
+button {
   text-decoration: none;
+  color: inherit;
   cursor: pointer;
 }

@@ -233,3 +233,117 @@ body {
     }
   }
 }
+.contacts {
+  .subtitle {
+    margin-bottom: 60px;
+  }
+  .contacts-form {
+    display: flex;
+    flex-direction: column;
+    width: 391px;
+    input,
+    textarea {
+      color: #8d8d8d;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.56px;
+      padding: 14px 21px;
+    }
+    .input {
+      width: 391px;
+      height: 46px;
+      background-color: #f3f3f3;
+      border: none;
+      margin-bottom: 10px;
+    }
+    .desc {
+      width: 391px;
+      height: 147px;
+      background-color: #f3f3f3;
+      border: none;
+      margin-bottom: 22px;
+    }
+    .checkbox {
+      margin-bottom: 21px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.42px;
+    }
+    .see-more-btn {
+      background-color: $font-color;
+      color: #fff;
+      fill: #fff;
+    }
+  }
+  .contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: $dark-background;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
+  fill: #fff;
+  .logo {
+    width: 145px;
+    height: 94px;
+  }
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 25px;
+  }
+  .footer-menu {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  .footer-contacts {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+  .footer-social {
+    ul {
+      display: flex;
+      gap: 40px;
+    }
+  }
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.1;
+    margin: 60px 0 0;
+  }
+  .footer-policy {
+    margin: 24px auto;
+    padding-bottom: 24px;
+    text-align: center;
+    color: rgba(200, 200, 200, 0.5);
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.83;
+  }
+}

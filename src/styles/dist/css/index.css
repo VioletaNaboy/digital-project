@@ -16,12 +16,15 @@ button {
   display: inline-block;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
-a, button {
+a,
+button {
   text-decoration: none;
+  color: inherit;
   cursor: pointer;
 }
 
@@ -252,4 +255,112 @@ body {
   background-color: transparent;
   color: #fff;
   fill: #fff;
+}
+
+.contacts .subtitle {
+  margin-bottom: 60px;
+}
+.contacts .contacts-form {
+  display: flex;
+  flex-direction: column;
+  width: 391px;
+}
+.contacts .contacts-form input,
+.contacts .contacts-form textarea {
+  color: #8d8d8d;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  padding: 14px 21px;
+}
+.contacts .contacts-form .input {
+  width: 391px;
+  height: 46px;
+  background-color: #f3f3f3;
+  border: none;
+  margin-bottom: 10px;
+}
+.contacts .contacts-form .desc {
+  width: 391px;
+  height: 147px;
+  background-color: #f3f3f3;
+  border: none;
+  margin-bottom: 22px;
+}
+.contacts .contacts-form .checkbox {
+  margin-bottom: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+.contacts .contacts-form .see-more-btn {
+  background-color: #333;
+  color: #fff;
+  fill: #fff;
+}
+.contacts .contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
+  fill: #fff;
+}
+.footer .logo {
+  width: 145px;
+  height: 94px;
+}
+.footer .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 58px;
+}
+.footer h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+.footer .footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .footer-contacts ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer .footer-social ul {
+  display: flex;
+  gap: 40px;
+}
+.footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.1;
+  margin: 60px 0 0;
+}
+.footer .footer-policy {
+  margin: 24px auto;
+  padding-bottom: 24px;
+  text-align: center;
+  color: rgba(200, 200, 200, 0.5);
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.83;
 }
