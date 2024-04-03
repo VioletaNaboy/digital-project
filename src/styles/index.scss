@@ -42,6 +42,16 @@ main {
 section {
   margin-top: 120px;
 }
+a,
+button {
+  transition: color 0.3s, font-weight color 0.3s;
+  &:hover,
+  &:focus {
+    color: $title-color;
+    fill: $title-color;
+    font-weight: 400;
+  }
+}
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 24px 120px;
@@ -54,6 +64,8 @@ section {
   .about-wrapper,
   .hero-wrapper {
     flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
   }
   .footer-wrapper,
   .tasks-wrapper {
@@ -96,6 +108,13 @@ section {
   .nav-link {
     color: $font-color;
     padding: 45px 0;
+    transition: color 0.3s, font-weight 0.3s;
+    &:hover,
+    &:focus {
+      color: $title-color;
+      fill: $title-color;
+      font-weight: 400;
+    }
   }
 }
 .hero {
@@ -123,6 +142,19 @@ section {
   }
   .photo-wrapper {
     position: relative;
+    overflow: hidden;
+    width: 770px;
+    height: 829px;
+    display: flex;
+  }
+  .slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .slide.active {
+    display: block;
   }
   .see-more-btn {
     position: absolute;
@@ -230,6 +262,13 @@ section {
     fill: #fff;
     border: none;
     position: relative;
+    transition: color 0.3s, font-weight 0.3s;
+    &:hover,
+    &:focus {
+      color: $title-color;
+      fill: $title-color;
+      font-weight: 400;
+    }
   }
   .image-container {
     position: relative;
@@ -256,6 +295,13 @@ section {
       background-color: transparent;
       color: #fff;
       fill: #fff;
+      transition: color 0.3s, font-weight 0.3s;
+      &:hover,
+      &:focus {
+        color: $title-color;
+        fill: $title-color;
+        font-weight: 400;
+      }
     }
   }
 }
@@ -302,6 +348,13 @@ section {
       background-color: $font-color;
       color: #fff;
       fill: #fff;
+      transition: color 0.3s, font-weight 0.3s;
+      &:hover,
+      &:focus {
+        color: $title-color;
+        fill: $title-color;
+        font-weight: 400;
+      }
     }
   }
   .contacts-wrapper {

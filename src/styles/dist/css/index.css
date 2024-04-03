@@ -64,6 +64,18 @@ section {
   margin-top: 120px;
 }
 
+a,
+button {
+  transition: color 0.3s, font-weight color 0.3s;
+}
+a:hover, a:focus,
+button:hover,
+button:focus {
+  color: #bdbdbd;
+  fill: #bdbdbd;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 24px 120px;
@@ -76,6 +88,8 @@ section {
   .about-wrapper,
   .hero-wrapper {
     flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
   }
   .footer-wrapper,
   .tasks-wrapper {
@@ -120,6 +134,12 @@ section {
 .header .nav-link {
   color: #333;
   padding: 45px 0;
+  transition: color 0.3s, font-weight 0.3s;
+}
+.header .nav-link:hover, .header .nav-link:focus {
+  color: #bdbdbd;
+  fill: #bdbdbd;
+  font-weight: 400;
 }
 
 .hero {
@@ -148,6 +168,19 @@ section {
 }
 .hero .photo-wrapper {
   position: relative;
+  overflow: hidden;
+  width: 770px;
+  height: 829px;
+  display: flex;
+}
+.hero .slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero .slide.active {
+  display: block;
 }
 .hero .see-more-btn {
   position: absolute;
@@ -256,6 +289,12 @@ section {
   fill: #fff;
   border: none;
   position: relative;
+  transition: color 0.3s, font-weight 0.3s;
+}
+.projects .see-more-btn:hover, .projects .see-more-btn:focus {
+  color: #bdbdbd;
+  fill: #bdbdbd;
+  font-weight: 400;
 }
 .projects .image-container {
   position: relative;
@@ -283,6 +322,12 @@ section {
   background-color: transparent;
   color: #fff;
   fill: #fff;
+  transition: color 0.3s, font-weight 0.3s;
+}
+.projects .overlay .see-more-btn:hover, .projects .overlay .see-more-btn:focus {
+  color: #bdbdbd;
+  fill: #bdbdbd;
+  font-weight: 400;
 }
 
 .contacts .subtitle {
@@ -328,6 +373,12 @@ section {
   background-color: #333;
   color: #fff;
   fill: #fff;
+  transition: color 0.3s, font-weight 0.3s;
+}
+.contacts .contacts-form .see-more-btn:hover, .contacts .contacts-form .see-more-btn:focus {
+  color: #bdbdbd;
+  fill: #bdbdbd;
+  font-weight: 400;
 }
 .contacts .contacts-wrapper {
   display: flex;

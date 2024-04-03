@@ -1,3 +1,4 @@
+//gallery
 const gallery = document.getElementById('gallery');
 const galleryBtn = document.getElementById('btn-gallery');
 
@@ -61,3 +62,35 @@ galleryBtn.addEventListener('click', () => {
             galleryBtn.style.display = 'none';
         }
 })
+
+//slider
+const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const slides = document.querySelectorAll(".slide");
+      const slideNumberElement = document.getElementById("slideNumber");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          if (i === index) {
+            slide.classList.add("active");
+          } else {
+            slide.classList.remove("active");
+          }
+        });
+         slideNumberElement.textContent = (index + 1).toString().padStart(2, '0');
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      nextBtn.addEventListener("click", nextSlide);
+      prevBtn.addEventListener("click", prevSlide);
+    
